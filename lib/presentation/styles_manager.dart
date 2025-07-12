@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:mvvm/presentation/fonts_manager.dart';
 
-class StylesManager {
+
   TextStyle _getTextStyle(double fontSize, FontWeight fontWeight, Color color) {
     return TextStyle(
       fontSize: fontSize,
@@ -62,4 +62,4 @@ class StylesManager {
       color,
     );
   }
-}
+
