@@ -6,6 +6,7 @@ import 'package:mvvm/presentation/main/main_view.dart';
 import 'package:mvvm/presentation/onBoarding/on_boarding_view.dart';
 import 'package:mvvm/presentation/register/register_view.dart';
 import 'package:mvvm/presentation/resources/routes.dart';
+import 'package:mvvm/presentation/resources/strings_manager.dart';
 import 'package:mvvm/presentation/splash/splash_view.dart';
 import 'package:mvvm/presentation/store_details/store_details_view.dart';
 
@@ -49,7 +50,7 @@ final GoRouter router = GoRouter(
     ),
   ],
   errorBuilder: (context, state) => Scaffold(
-    appBar: AppBar(title: const Text('No Route Found')),
-    body: const Center(child: Text('No Route Found')),
+    appBar: AppBar(title: const Text(AppStrings.noRouteFound)),
+    body: const Center(child: Text(AppStrings.noRouteFound)),
   ),
 );
