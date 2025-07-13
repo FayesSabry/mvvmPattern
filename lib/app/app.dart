@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm/presentation/resources/app_router.dart';
 import 'package:mvvm/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
@@ -12,8 +13,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: getApplicationTheme() ,
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: router,
+      theme: getApplicationTheme(),
     );
   }
 }
