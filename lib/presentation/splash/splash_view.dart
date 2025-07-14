@@ -1,11 +1,10 @@
-
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mvvm/presentation/resources/assets_manager.dart';
 import 'package:mvvm/presentation/resources/color_manager.dart';
+import 'package:mvvm/presentation/resources/constant_manager.dart';
 import 'package:mvvm/presentation/resources/routes.dart';
 
 class SplashView extends StatefulWidget {
@@ -18,7 +17,7 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   Timer? _timer;
   _setDelay() {
-    _timer = Timer(Duration(seconds: 3), () {
+    _timer = Timer(Duration(seconds: AppConstants.splashDelay), () {
       context.go(Routes.onBoardingRoute);
     });
   }
@@ -28,6 +27,7 @@ class _SplashViewState extends State<SplashView> {
     super.initState();
     _setDelay();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
