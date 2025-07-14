@@ -61,5 +61,16 @@ import 'package:mvvm/presentation/resources/fonts_manager.dart';
       FontWeightManager.bold,
       color,
     );
+    
   }
 
+TextStyle getSemiBoldStyle({
+    double fontSize = FontSizes.s12,
+    required Color color,
+  }) {
+    return _getTextStyle(
+      fontSize,
+      FontWeightManager.semiBold,
+      color,
+    );
+  }

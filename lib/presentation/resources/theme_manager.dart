@@ -57,8 +57,12 @@ ThemeData getApplicationTheme() {
         color: ColorManager.darkGrey,
         fontSize: FontSizes.s16,
       ),
+      headlineMedium: getRegularStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSizes.s14,
+      ),
       titleMedium: getMediumStyle(
-        color: ColorManager.lightGrey,
+        color: ColorManager.primary,
         fontSize: FontSizes.s14,
       ),
       bodySmall: getRegularStyle(
@@ -73,30 +77,27 @@ ThemeData getApplicationTheme() {
 
     inputDecorationTheme: InputDecorationTheme(
       contentPadding: const EdgeInsets.all(AppPaddings.p8),
-      hintStyle: getRegularStyle(color: ColorManager.grey, fontSize: FontSizes.s14),
-      labelStyle: getMediumStyle(color: ColorManager.grey, fontSize: FontSizes.s14),
+      hintStyle: getRegularStyle(
+        color: ColorManager.grey,
+        fontSize: FontSizes.s14,
+      ),
+      labelStyle: getMediumStyle(
+        color: ColorManager.grey,
+        fontSize: FontSizes.s14,
+      ),
       errorStyle: getRegularStyle(color: ColorManager.error),
       enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.grey,
-          width: AppSize.s1_5,
-        ),
+        borderSide: BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
       // focusedBorder
       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.grey,
-          width: AppSize.s1_5,
-        ),
+        borderSide: BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
       // errorBorder
       errorBorder: OutlineInputBorder(
-        borderSide: BorderSide(
-          color: ColorManager.error,
-          width: AppSize.s1_5,
-        ),
+        borderSide: BorderSide(color: ColorManager.error, width: AppSize.s1_5),
         borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
       ),
       focusedErrorBorder: OutlineInputBorder(
