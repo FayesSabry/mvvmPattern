@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mvvm/presentation/forget_password/forget_password_view.dart';
 import 'package:mvvm/presentation/login/login_view.dart';
 import 'package:mvvm/presentation/main/main_view.dart';
-import 'package:mvvm/presentation/onBoarding/on_boarding_view.dart';
+import 'package:mvvm/presentation/onBoarding/view/on_boarding_view.dart';
 import 'package:mvvm/presentation/register/register_view.dart';
 import 'package:mvvm/presentation/resources/routes.dart';
 import 'package:mvvm/presentation/resources/strings_manager.dart';
