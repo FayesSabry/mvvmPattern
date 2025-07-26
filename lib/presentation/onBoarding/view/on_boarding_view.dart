@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mvvm/domain/models.dart';
+import 'package:mvvm/domain/models/models.dart';
 import 'package:mvvm/presentation/onBoarding/view_model/on_boardin_view_model.dart';
 import 'package:mvvm/presentation/resources/assets_manager.dart';
 import 'package:mvvm/presentation/resources/color_manager.dart';
