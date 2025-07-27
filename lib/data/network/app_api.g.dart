@@ -20,12 +20,12 @@ class _AppServiceClient implements AppServiceClient {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<String> login(String email, String password) async {
+  Future<AuthenticationResponse> login(String email, String password) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = {'email': email, 'password': password};
-    final _options = _setStreamType<String>(
+    final _options = _setStreamType<AuthenticationResponse>(
       Options(method: 'POST', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
@@ -35,10 +35,10 @@ class _AppServiceClient implements AppServiceClient {
           )
           .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
     );
-    final _result = await _dio.fetch<String>(_options);
-    late String _value;
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AuthenticationResponse _value;
     try {
-      _value = _result.data!;
+      _value = AuthenticationResponse.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
