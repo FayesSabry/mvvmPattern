@@ -15,4 +15,6 @@ class AppStrings {
       'Tut app is an awesome flutter application using clean architecture #4';
 
   static const String skip = 'Skip';
+
+  
 }
