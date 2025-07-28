@@ -1,5 +1,5 @@
 class Failure {
   final int code;
   final String errMessage;
-  Failure(this.errMessage, this.code);
+  Failure(this.code, this.errMessage);
 }
