@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:mvvm/data/network/failure.dart';
 import 'package:mvvm/data/network/requests.dart';
-import 'package:mvvm/data/use_case/base_use_case.dart';
+import 'package:mvvm/domain/use_case/base_use_case.dart';
 import 'package:mvvm/domain/models/models.dart';
 import 'package:mvvm/domain/repository/repository.dart';
 
